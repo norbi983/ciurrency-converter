@@ -14,3 +14,4 @@ Hi, my name is Norbert Mszyca, and this is my first project as Frontend Junior D
 - css
 - javaScript
 - Markdown
+- BEM
