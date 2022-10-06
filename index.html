@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="css/element.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>Mój kantor</title>
+</head>
+
+<body>
+    <form class="form js-form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Kalkulator walut</legend>
+            <p>
+                <label class="form__label">Kwota <br>
+                    <input class="form__fieldNumber js-form__inputValue" type="number" min="0.01" required step="0.01"
+                        placeholder="Wymagane pole"> PLN
+                </label>
+            </p>
+            <p>
+                <label class="form__label">Chcę <br>
+                    <select class="form__fieldSelect js-form__exchangeWant js-form__exchangeWantText" name="Currency">
+                        <option value="4.86">EURO</option>
+                        <option value="4.97">USD</option>
+                        <option value="0.034">JPN</option>
+                    </select>
+                    - kurs wynosi <strong class="js-form__currencyWant">N/A</strong> <span
+                        class="js-form__valueWant">PLN</span> na dzień 29.09.2022r
+                </label>
+            </p>
+            <p>
+                Otrzymasz <strong class="js-form__value">N/A</strong> <span class="js-form__currency">EURO</span>
+            </p>
+        </fieldset>
+        <button class="form__button" type="submit">Oblicz</button>
+        <button class="form__button" type="reset">Wyczyść</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+.element {
+    background-image: url(../kantor/images/header_coins.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
